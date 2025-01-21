@@ -15,5 +15,6 @@
         "> 1%",
         "last 2 versions"
     ],
+    "livePreview.defaultPreviewPath": "/index.html",
 
 }
