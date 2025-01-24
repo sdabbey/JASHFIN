@@ -968,7 +968,10 @@ nav.navbar .nav-content .extra .nav-trigger {
 }
 .main .featured-services-section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,9 +979,11 @@ nav.navbar .nav-content .extra .nav-trigger {
           box-sizing: border-box;
   background: #BB1818;
   padding: 2rem 0;
+  position: relative;
 }
 .main .featured-services-section .left-section {
   width: 50%;
+  position: relative;
   padding: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -989,16 +994,22 @@ nav.navbar .nav-content .extra .nav-trigger {
           flex-direction: column;
   gap: 1rem;
 }
-.main .featured-services-section .left-section h2 {
+.main .featured-services-section .left-section .content {
+  width: 100%;
+  position: sticky;
+  top: 20%;
+  bottom: 20%;
+}
+.main .featured-services-section .left-section .content h2 {
   color: white;
   font-size: 56px;
   font-weight: 400;
   margin-top: 0;
 }
-.main .featured-services-section .left-section h2 span {
+.main .featured-services-section .left-section .content h2 span {
   font-weight: bold;
 }
-.main .featured-services-section .left-section span.more {
+.main .featured-services-section .left-section .content span.more {
   font-size: 17.6px;
   font-weight: 500;
 }
@@ -1006,7 +1017,6 @@ nav.navbar .nav-content .extra .nav-trigger {
   width: 50%;
   height: 100%;
   overflow: hidden;
-  overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
