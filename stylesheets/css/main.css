@@ -1328,11 +1328,8 @@ nav.navbar .nav-content .extra .nav-trigger {
 }
 .main footer.footer {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   background-color: #11061C;
-  padding: 5%;
+  padding: 2% 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1343,52 +1340,21 @@ nav.navbar .nav-content .extra .nav-trigger {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.main footer.footer .content {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.main footer.footer hr {
+  border: none;
+  background: rgba(255, 255, 255, 0.137);
+  height: 1px;
+  margin: 2% 0;
 }
-.main footer.footer .content .logo {
-  width: 100%;
+.main footer.footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10%;
 }
-.main footer.footer .content .logo img {
-  width: 100%;
-}
-.main footer.footer .content .logo span {
-  font-family: "Dancing Script", cursive;
-  font-size: 32px;
-  color: #BB1818;
-}
-@media (min-width: 1200px) {
-  .main footer.footer .content .logo {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding-left: 0;
-  }
-}
-.main footer.footer .content .tab-links {
+.main footer.footer .footer-content .left-section {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1397,51 +1363,59 @@ nav.navbar .nav-content .extra .nav-trigger {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 13px;
-  padding: 8%;
-  font-family: "Montserrat", sans-serif;
 }
-.main footer.footer .content .tab-links a {
-  color: #fff;
-  font-size: 11.2px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 0.3rem;
+.main footer.footer .footer-content .left-section img {
+  width: 5rem;
+}
+.main footer.footer .footer-content .left-section h3 {
+  font-size: 20.8px;
+  font-weight: 500;
+  color: #FF9355;
+  margin: 1rem 0;
+}
+.main footer.footer .footer-content .left-section h3 span {
+  color: #BB1818;
+}
+.main footer.footer .footer-content .left-section .divided-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+.main footer.footer .footer-content .left-section .divided-section p {
+  color: #ffffff;
+}
+.main footer.footer .footer-content .left-section .divided-section p a {
+  color: #ffffff;
   text-decoration: none;
 }
-.main footer.footer .content .tab-links a:hover {
-  color: #b1b1b1;
+.main footer.footer .footer-content .left-section .divided-section p a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
 }
-@media (min-width: 1200px) {
-  .main footer.footer .content .tab-links {
-    gap: 20px;
-    padding: 10%;
-  }
+.main footer.footer .footer-content .left-section .divided-section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
 }
-@media (min-width: 1200px) {
-  .main footer.footer .content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    height: 50vh;
-  }
-  .main footer.footer .content .logo {
-    width: 50%;
-  }
-  .main footer.footer .content .tab-links {
-    width: 50%;
-  }
+.main footer.footer .footer-content .left-section .divided-section div a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-.main footer.footer p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12.96px;
-  font-weight: 300;
-  padding: 5% 0;
-  margin-bottom: 5rem;
+.main footer.footer .footer-content .left-section .divided-section div a:hover {
+  color: #BB1818;
 }
-@media (min-width: 1200px) {
-  .main footer.footer p {
-    padding: 0;
-  }
+.main footer.footer .footer-content .left-section .divided-section div a i.bx {
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
