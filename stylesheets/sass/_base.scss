@@ -15,12 +15,13 @@ body {
     background-color: $bg-color;
     color: $font-color;
     line-height: 1.6;
-   
-    width: 100vw;
+    
+    box-sizing: border-box;
+    width: 100%;
     height: fit-content;
     margin: 0;
     overflow: hidden;
-  
+    overflow-y: auto;
     font-weight: 300;
     
 }
