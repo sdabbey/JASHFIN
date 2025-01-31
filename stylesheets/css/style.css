@@ -1255,6 +1255,11 @@ nav.navbar .nav-content .extra .nav-trigger {
   font-size: 19.2px;
 }
 @media (max-width: 768px) {
+  .main .contact-section {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .main .contact-section h3 {
     font-size: 40px;
   }
@@ -1361,6 +1366,11 @@ nav.navbar .nav-content .extra .nav-trigger {
   font-weight: 600;
   color: #FF9355;
 }
+@media (max-width: 768px) {
+  .main .story-section p {
+    font-size: 22.4px;
+  }
+}
 .main .missvis-section {
   background: #231531;
   width: 100%;
@@ -1441,6 +1451,14 @@ nav.navbar .nav-content .extra .nav-trigger {
   font-size: 24px;
   font-weight: 600;
   color: #FF9355;
+}
+@media (max-width: 768px) {
+  .main .missvis-section .mission-section, .main .missvis-section .vision-section, .main .missvis-section .values-section {
+    width: 100%;
+  }
+  .main .missvis-section .mission-section p, .main .missvis-section .vision-section p, .main .missvis-section .values-section p {
+    font-size: 22.4px;
+  }
 }
 .main .team-section {
   width: 100%;
